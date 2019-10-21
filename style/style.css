@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Prompt&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: 'Prompt', sans-serif;
+}
+
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 1400px;
+}
+
+header, main, footer {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    align-self: flex-end;
+}
+
+.top-contact-info {
+    display: flex;
+    margin: 15px 20px 0 0;
+}
+
+.top-contact-info img:hover, .bottom-contact-info img:hover {
+    transform: scale(1.2) rotateZ(20deg);
+}
+
+.top-contact-info img {
+    width: 70px;
+}
+
+.bottom-contact-info {
+    display: flex;
+}
+
+.bottom-contact-info img {
+    width: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.bottom-contact-info a {
+    display: flex;
+    align-items: center;
+    margin: 0 10px 10px 10px;
+    font-weight: bold;
+}
+
+.profile-photo {
+    border: 3px inset #ffffff;
+    max-width: 210px;
+    background: #fff;
+}
+
+
+main > section {
+    width: 80%;
+    margin: 20px;
+}
+
+.line {
+    height: 5px;
+    margin: 5px 0;
+    background: radial-gradient(50% 50%, #000000, transparent);
+}
+
+.toProject {
+    width: 630px;
+    height: 400px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1003;
+}
+h1 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+p, section > ul {
+    font-size: 18px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+.date {
+    margin-bottom: 30px;
+}
+
+button.accordion {
+    background: #DD1C1A;
+    color: #ffffff;
+    cursor: pointer;
+    border: 0;
+    padding: 15px;
+    width: 50%;
+    font-size: 18px;
+    transition: .4s;
+    text-align: center;
+}
+
+button:focus {
+    outline: none;
+}
+
+button.accordion.active,button.accordion:hover {
+    background: #9B0A07;
+}
+
+.accordion-text {
+    text-align: center;
+    padding: 0 18px;
+    color: #000;
+    max-height: 0;
+    overflow: hidden;
+    width: 50%;
+    transition: max-height .2s ease-out;
+}
+
+.slider {
+    width: 730px;
+    height: 400px;
+    position: inherit;
+
+}
+.carousel {
+    margin-top: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+
+.item-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.item img {
+    width: 630px;
+    height: 400px;
+}
+
+.item {
+    display: none;
+    position: relative;
+    animation: 0.5s ease-in-out;
+    margin: 0 auto;
+}
+
+.active,
+.next {
+    display: block;
+}
+
+.next {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.description {
+    margin: 30px 20%;
+    font-size: 32px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-name {
+    padding: 10px;
+}
+
+.control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 15%;
+    cursor: pointer;
+}
+
+.control.left {
+    left: 0;
+    right: auto;
+}
+
+.control.right {
+    right: 0;
+    left: auto;
+}
+
+.arrow {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 84px;
+}
+
+.arrow.right {
+    right: 50%;
+}
+
+.to-left {
+    animation-name: left;
+}
+
+.from-right {
+    animation-name: right;
+}
+
+.to-right {
+    animation-name: right;
+    animation-direction: reverse;
+}
+
+.from-left {
+    animation-name: left;
+    animation-direction: reverse;
+}
+
+@keyframes left {
+    from {
+        left: 0;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes right {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+
+
+
