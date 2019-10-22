@@ -40,8 +40,7 @@
 
 <script>
     const switchButton = document.getElementsByClassName('switch')[0];
-    const container = document.getElementsByClassName('container')[0];
-    const mdStyles = document.getElementById('swtch');
+    const container = document.getElementsByClassName('wrapper')[0];
     let switched = true;
     const forMobile = `<span class="sw-text">Go mobile</span>
 					<i class="fas fa-mobile-alt fa-1x"></i>`;
@@ -52,12 +51,11 @@
         if (switched) {
             switchButton.innerHTML = forDesktop;
             container.style.width = '375px';
-            mdStyles.href = 'css/main.css'
         } else {
             switchButton.innerHTML = forMobile;
-            container.style.width = '1140px';
-            mdStyles.href = 'css/main.css';
+            container.style.width = '100%';
         }
+        switched = !switched;
     });
 </script>
 </body>
