@@ -122,6 +122,10 @@ button.accordion.active, button.accordion:hover {
     width: 100%;
 }
 
+.item-description {
+    margin: 30px;
+}
+
 .description {
     width: 230px;
     height: 135px;
@@ -133,6 +137,7 @@ button.accordion.active, button.accordion:hover {
     border-radius: 10px;
     color: #fff;
     box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.75);
+    margin: 0 auto;
 }
 
 .project-description {
@@ -182,6 +187,7 @@ button.accordion.active, button.accordion:hover {
     top: 50%;
     transform: translateY(-50%);
     font-size: 84px;
+    pointer-events: none;
 }
 
 .arrow.right {
