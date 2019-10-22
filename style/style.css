@@ -8,14 +8,16 @@
     font-family: 'Prompt', sans-serif;
 }
 
-
-.container {
-    max-width: 1140px;
-    margin: 0 auto;
-    height: 1400px;
+.bg {
+    background: url("../images/background.jpg");
 }
 
-header, main, footer {  
+.container {
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+header, main, footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,25 +41,11 @@ nav {
     width: 70px;
 }
 
-.bottom-contact-info {
-    display: flex;
-}
-
-.bottom-contact-info img {
-    width: 50px;
-}
-
 a {
     text-decoration: none;
     color: #000000;
 }
 
-.bottom-contact-info a {
-    display: flex;
-    align-items: center;
-    margin: 0 10px 10px 10px;
-    font-weight: bold;
-}
 
 .profile-photo {
     border: 3px inset #ffffff;
@@ -66,44 +54,6 @@ a {
 }
 
 
-main > section {
-    width: 80%;
-    margin: 20px;
-}
-
-.line {
-    height: 5px;
-    margin: 5px 0;
-    background: radial-gradient(50% 50%, #000000, transparent);
-}
-
-.toProject {
-    width: 630px;
-    height: 400px;
-    position: absolute;
-    cursor: pointer;
-    z-index: 1003;
-}
-h1 {
-    font-size: 40px;
-}
-
-h3 {
-    font-size: 26px;
-}
-
-p, section > ul {
-    font-size: 18px;
-}
-
-footer {
-    margin-top: 20px;
-}
-
-.date {
-    margin-bottom: 30px;
-}
-
 button.accordion {
     background: #DD1C1A;
     color: #ffffff;
@@ -111,43 +61,36 @@ button.accordion {
     border: 0;
     padding: 15px;
     width: 50%;
-    font-size: 18px;
+    font-size: 20px;
     transition: .4s;
     text-align: center;
+    margin: 10px 0;
+    justify-content: space-between;
 }
+
 
 button:focus {
     outline: none;
 }
 
-button.accordion.active,button.accordion:hover {
+button.accordion.active, button.accordion:hover {
     background: #9B0A07;
 }
 
 .accordion-text {
-    text-align: center;
-    padding: 0 18px;
+    margin: 0 auto;
     color: #000;
     max-height: 0;
-    overflow: hidden;
     width: 50%;
+    overflow: hidden;
     transition: max-height .2s ease-out;
 }
 
-.slider {
-    width: 730px;
-    height: 400px;
-    position: inherit;
 
-}
 .carousel {
-    margin-top: 600px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
+    margin: 0 auto;
     text-align: center;
-    transform: translate(-50%,-50%);
+
 }
 
 .item-container {
@@ -168,8 +111,8 @@ button.accordion.active,button.accordion:hover {
     margin: 0 auto;
 }
 
-.active,
-.next {
+.carousel .active,
+.carousel .next {
     display: block;
 }
 
@@ -258,5 +201,8 @@ button.accordion.active,button.accordion:hover {
 }
 
 
+@media (max-width: 375px) {
+
+}
 
 
