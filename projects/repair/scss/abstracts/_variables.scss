@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'FuturaDemiC';
+  src: url('../../assets/fonts/Futura/FuturaDemiC.eot');
+  src: local('Futura Demi Cyrillic'), local('FuturaDemiC'), url('../../assets/fonts/Futura/FuturaDemiC.eot') format('embedded-opentype'), url('../fonts/Futura/FuturaDemiC.woff') format('woff'), url('../../assets/fonts/Futura/FuturaDemiC.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura Book';
+  src: url('../../assets/fonts/Futura/FuturaBookC.eot');
+  src: local('Futura Book Cyrillic'), local('FuturaBookC'), url('../../assets/fonts/Futura/FuturaBookC.eot') format('embedded-opentype'), url('../../assets/fonts/Futura/FuturaBookC.woff') format('woff'), url('../../assets/fonts/Futura/FuturaBookC.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yeseva One';
+  src: url('../../assets/fonts/YesevaOne/YesevaOne.eot');
+  src: local('YesevaOne'), url('../../assets/fonts/YesevaOne/YesevaOne.eot') format('embedded-opentype'), url('../../assets/fonts/YesevaOne/YesevaOne.woff2') format('woff2'), url('../../assets/fonts/YesevaOne/YesevaOne.woff') format('woff'), url('../../assets/fonts/YesevaOne/YesevaOne.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$yeseva-one: 'Yeseva One', sans-serif;
+$futura-demi: 'FuturaDemiC', sans-serif;
+$futura-book: 'Futura Book', sans-serif;
+$main-color: #e3b873;
+$color-dark: #131313;
