@@ -410,6 +410,17 @@ button {
 
   &__video {
     margin-bottom: 50px;
+
+    &__video__inner {
+      padding-top: 56.249999999999999999999999999999%;
+
+      iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+      }
+    }
   }
 
   &__hr {
