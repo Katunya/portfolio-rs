@@ -1209,9 +1209,9 @@ button {
 }
 
 .working {
-    height: 1216px;
     background-color: #131313;
-    padding-top: 440px
+    padding-top: 440px;
+    padding-bottom: 480px;
 }
 
 .working__wrapper {
@@ -1357,8 +1357,7 @@ button {
 }
 
 .text-section__team {
-    height: 970px;
-    margin-top: -420px
+    margin-top: -300px ;
 }
 
 .text-section__team .text-section__paragraph {
@@ -1484,7 +1483,7 @@ button {
 
 .questions {
     width: 100%;
-    height: 0;
+    height: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1989,14 +1988,6 @@ button {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex
-    }
-
-    .text-section__design {
-        height: 2250px
-    }
-
-    .text-section__team {
-        height: 2020px
     }
 
     .text-section__team .text-section__hr:last-of-type, .text-section__team .text-section__paragraph:last-child {

@@ -948,9 +948,9 @@ button {
 }
 
 .working {
-  height: 1216px;
   background-color: $color-dark;
   padding-top: 440px;
+  padding-bottom: 480px;
 
   &__wrapper {
     display: flex;
@@ -1603,13 +1603,7 @@ button {
 
   }
 
-  .text-section__design {
-    height: 2250px;
-  }
-
   .text-section__team {
-    height: 2020px;
-
     .text-section {
       &__paragraph:last-child,
       &__hr:last-of-type {
