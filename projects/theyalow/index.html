@@ -4,68 +4,20 @@
 	<meta charset="UTF-8">
 	<title>Title</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../iframe_view/style_iframe.css">
 </head>
 <body>
 <div class="wrapper">
-	<button class="switch btn btn-secondary">
-		<span class="sw-text">Go mobile</span>
-	</button>
-	<button class="switch btn btn-secondary">
-		<span class="sw-text" id="back">Back</span>
-	</button>
+	<div class="container-button">
+		<button class="switch btn btn-secondary">
+			<span class="sw-text">Go mobile</span>
+		</button>
+		<button class="switch btn btn-secondary">
+			<span class="sw-text" id="back">Back</span>
+		</button>
+	</div>
 	<iframe src="theyalow.html" frameborder="0"></iframe>
 </div>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		padding: 0;
-	}
-
-	.wrapper {
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		height: 100vh;
-		background: rgba(0, 0, 0, 0.2);
-		margin: 0 auto
-	}
-
-	iframe {
-		width: 100%;
-		height: 100%;
-	}
-
-	.switch {
-		position: absolute;
-		align-self: flex-end;
-	}
-</style>
-
-<script>
-    const switchButton = document.getElementsByClassName('switch')[0];
-    const container = document.getElementsByClassName('wrapper')[0];
-    let switched = true;
-    const forMobile = `<span class="sw-text">Go mobile</span>`;
-    const forDesktop = `<span class="sw-text">Go desktop</span>`;
-    const back = document.getElementById('back');
-
-    back.addEventListener('click', () => {
-        history.back();
-    });
-
-    switchButton.addEventListener('click', () => {
-        if (switched) {
-            switchButton.innerHTML = forDesktop;
-            container.style.width = '375px';
-        } else {
-            switchButton.innerHTML = forMobile;
-            container.style.width = '100%';
-        }
-        switched = !switched;
-    });
-</script>
+<script src="../iframe_view/index_iframe.js"></script>
 </body>
 </html>

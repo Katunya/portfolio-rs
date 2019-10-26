@@ -540,6 +540,7 @@ button {
     position: relative;
     max-width: 560px;
     margin-bottom: 50px;
+    width: 100%;
 }
 
 .text-section__video__inner {
