@@ -8,11 +8,12 @@
     font-family: 'Prompt', sans-serif;
 }
 
-.bg {
+.bg-container {
     background: url("../images/background.jpg");
 }
 
 .container {
+
     margin: 0 auto;
     padding-bottom: 100px;
 }
@@ -25,7 +26,7 @@ header, main, footer {
 }
 
 nav {
-    margin: 0  auto;
+    margin: 0 auto;
 }
 
 .top-contact-info {
@@ -85,7 +86,6 @@ button.accordion.active, button.accordion:hover {
     overflow: hidden;
     transition: max-height .2s ease-out;
 }
-
 
 .carousel {
     margin: 0 auto;
@@ -154,7 +154,6 @@ button.accordion.active, button.accordion:hover {
 }
 
 
-
 .project-name {
     padding: 10px;
 }
@@ -214,25 +213,21 @@ button.accordion.active, button.accordion:hover {
 
 @keyframes left {
     from {
-        left: 0;
+        transform: translateX(0);
     }
     to {
-        left: -100%;
+        transform: translateX(-100%);
     }
 }
 
 @keyframes right {
     from {
-        left: 100%;
+        transform: translateX(100%);
     }
     to {
-        left: 0;
+        transform: translateX(0);
     }
 }
 
-
-@media (max-width: 375px) {
-
-}
 
 
