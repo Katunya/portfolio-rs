@@ -1,6 +1,6 @@
 html {
     min-width: 630px;
-    background-color: #FFF;
+    background-color: #fff;
 }
 
 body {
@@ -8,15 +8,7 @@ body {
     padding: 0;
 }
 
-ul,
-li,
-p,
-i,
-a,
-span,
-button,
-input,
-div {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -64,16 +56,12 @@ a, ul, li {
 .navigation__text {
     margin: 14px 0 0 5px;
     text-shadow: 0 2px 0 rgba(0, 0, 0, 0.42);
-    color: #ffffff;
-    font-family: "Lucida Sans";
+    color: #fff;
+    font-family: "Lucida Sans", serif;
     font-size: 41px;
     font-style: italic;
     text-transform: uppercase;
     letter-spacing: 0.41px;
-}
-
-.navigation__menu {
-
 }
 
 .navigation__list {
@@ -146,7 +134,7 @@ a, ul, li {
 }
 
 .intro__slide {
-    display: flex !important;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -156,7 +144,7 @@ a, ul, li {
     letter-spacing: 0.01em;
     text-align: center;
     max-width: 419px;
-    font-family: 'Asap';
+    font-family: 'Asap', serif;
     font-size: 63px;
     color: #f5c506;
     font-weight: normal;
@@ -192,7 +180,6 @@ a, ul, li {
 
 .advantage .advantage__link {
     display: block;
-    vertical-align: center;
     border-right: 1px solid #d0d0d0;
     height: 212px;
 }
@@ -227,7 +214,7 @@ a, ul, li {
 }
 
 .content__title {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', serif;
     font-size: 37px;
     font-weight: normal;
     color: #fff;
@@ -254,16 +241,14 @@ a, ul, li {
 
 .slider__text p {
     margin: 20px 0 2px 30px;
-    color: #ffffff;
-    font-family: "Segoe WP";
+    color: #fff;
+    font-family: "Segoe WP", serif;
     font-size: 29px;
     font-weight: 300;
     letter-spacing: 0.29px;
-
 }
 
 .slider__text img {
-
     display: block;
     cursor: pointer;
     margin-left: auto;
@@ -301,17 +286,12 @@ a, ul, li {
 
 .slider__data span:last-child {
     font-size: 21px;
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI', serif;
     color: #b26529;
     text-transform: uppercase;
-    color: #b26529;
-    font-family: "Segoe UI";
-    font-size: 21px;
     font-weight: 400;
     line-height: 38px;
-    text-transform: uppercase;
     letter-spacing: 0.21px;
-
 }
 
 .slider__video video {
@@ -333,7 +313,7 @@ a, ul, li {
     margin-top: 20px;
     margin-right: 20px;
     font-size: 25px;
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI', serif;
     font-weight: 100;
 }
 
@@ -345,10 +325,8 @@ a, ul, li {
 }
 
 .form {
-
     display: none;
     width: 272px;
-
 }
 
 .form__content {
@@ -372,7 +350,7 @@ a, ul, li {
     border: none;
     background: #e7a623;
     color: #fff;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 15px;
     width: 70px;
     height: 30px;
@@ -384,7 +362,7 @@ a, ul, li {
 }
 
 .promo__title {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', serif;
     font-weight: normal;
     font-size: 43px;
     color: #f5c506;
@@ -483,7 +461,7 @@ a, ul, li {
     width: 160px;
     height: 21px;
     text-shadow: 0 2px 0 rgba(0, 0, 0, 0.42);
-    color: #ffffff;
+    color: #fff;
     font-family: "Lucida Sans";
     font-size: 29px;
     font-style: italic;
@@ -578,7 +556,6 @@ a, ul, li {
 
     .navigation__list li {
         height: 62px;
-
     }
 
     .navigation__list li a {
@@ -681,6 +658,6 @@ a, ul, li {
     .form__element p {
         font-size: 13px;
         color: #8f8e8e;
-        font-family: Arial;
+        font-family: Arial, sans-serif;
     }
 }
