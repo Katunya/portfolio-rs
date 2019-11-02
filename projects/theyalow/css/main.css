@@ -441,7 +441,7 @@ a, ul, li {
     align-items: center;
     color: #a9a9a7;
     font-size: 22px;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', serif;
 }
 
 .promo__list li:last-child {
@@ -452,11 +452,12 @@ a, ul, li {
     max-width: 350px;
 }
 
-.promo__list span {
-    margin-right: 15px;
+.promo__list li:before {
+    content: '';
     display: block;
     width: 14px;
     height: 14px;
+    margin-right: 15px;
     border-radius: 50%;
     background: #f5c506;
 }
