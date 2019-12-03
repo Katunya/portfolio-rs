@@ -1,7 +1,7 @@
 @import "../abstracts/variables";
 
 .header {
-  width: 100vw;
+  width: 100%;
   height: 83px;
   background-color: $color-dark;
 }
@@ -32,7 +32,7 @@
     margin: 0;
     font-family: $futura-demi;
     color: $main-color;
-    font-size: 14px;
+    font-size: $font14;
     text-transform: uppercase;
   }
 }
@@ -59,9 +59,9 @@
     height: 14px;
     text-decoration: none;
     font-family: $futura-book;
-    font-size: 14px;
+    font-size: $font14;
     line-height: 18px;
-    color: #ffffff;
+    color: $white;
     text-transform: uppercase;
   }
 }
@@ -76,7 +76,7 @@
   &__number {
     font-family: $futura-demi;
     color: $main-color;
-    font-size: 14px;
+    font-size: $font14;
     line-height: 16px;
     text-decoration-line: underline;
   }
@@ -88,7 +88,7 @@
 }
 
 .intro {
-  width: 100vw;
+  width: 100%;
   height: 707px;
   background-color: $color-dark;
 
@@ -116,7 +116,7 @@
         height: 16px;
         font-family: $futura-demi;
         color: $main-color;
-        font-size: 14px;
+        font-size: $font14;
         line-height: 16px;
       }
 
@@ -153,7 +153,7 @@
     line-height: 53px;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: $white;
   }
 
   &__highlited {
@@ -168,7 +168,7 @@
     font-size: 22px;
     line-height: 30px;
 
-    color: #FFFFFF;
+    color: $white;
   }
 }
 
@@ -176,12 +176,13 @@ button {
   background-color: $main-color;
   border-radius: 2px;
   font-family: $futura-demi;
-  font-size: 13px;
+  font-size: $font13;
   line-height: 15px;
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
   border: none;
-  color: #ffffff;
+  color: $white;
 }
 
 .intro-content__button-calculate {
@@ -196,7 +197,8 @@ button {
   width: 207px;
   height: 51px;
   background: none;
-  border: 1px solid #ffffff;
+  border: 1px solid $white;
+  cursor: pointer;
 }
 
 .scroll-down-block {
@@ -215,16 +217,16 @@ button {
     font-family: $yeseva-one;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: $font14;
     line-height: 19px;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: $white;
   }
 }
 
 .projects {
-  width: 100vw;
+  width: 100%;
   height: 1074px;
   background-color: $color-dark;
   overflow: hidden;
@@ -246,9 +248,9 @@ button {
   &__paragraph {
     margin-top: 34px;
     font-family: $futura-book;
-    font-size: 18px;
+    font-size: $font18;
     line-height: 29px;
-    color: #ffffff;
+    color: $white;
   }
 }
 
@@ -297,7 +299,7 @@ button {
     font-family: $yeseva-one;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: $font18;
     line-height: 25px;
     text-transform: uppercase;
 
@@ -308,10 +310,10 @@ button {
     width: 50%;
     margin-top: 8px;
     font-family: $futura-book;
-    font-size: 15px;
+    font-size: $font15;
     line-height: 20px;
 
-    color: #FFFFFF;
+    color: $white;
   }
 }
 
@@ -328,7 +330,7 @@ button {
     font-family: $yeseva-one;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: $font14;
     line-height: 19px;
     text-transform: uppercase;
 
@@ -395,24 +397,27 @@ button {
     font-family: $yeseva-one;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: $font20;
     line-height: 28px;
     text-align: center;
     text-transform: uppercase;
-    color: #181818;
+    color: $dark-grey;
     margin-bottom: 12px;
   }
 
   &__image {
     margin-bottom: 22px;
+  }
 
+  .input-block__input{
+    color: $dark-grey !important;
   }
 
   &__video {
     margin-bottom: 50px;
 
     &__video__inner {
-      padding-top: 56.249999999999999999999999999999%;
+      padding-top: 56.25%;
 
       iframe {
         position: absolute;
@@ -431,14 +436,14 @@ button {
   }
 
   &__paragraph {
-    margin-bottom: 48px;
+    margin-bottom: 10px;
     max-width: 55%;
     font-family: $futura-book;
-    font-size: 20px;
+    font-size: $font20;
     line-height: 34px;
     text-align: center;
 
-    color: #363636;
+    color: $light-grey;
   }
 
   &__online-control {
@@ -446,7 +451,7 @@ button {
     margin-top: -324px;
 
     .text-section__heading {
-      color: #ffffff;
+      color: $white;
     }
   }
 
@@ -471,10 +476,10 @@ button {
     margin-bottom: 39px;
     width: 270px;
     font-family: $futura-demi;
-    font-size: 20px;
+    font-size: $font20;
     line-height: 25px;
     text-align: center;
-    color: #FFFFFF;
+    color: $white;
   }
 
   .input-block {
@@ -484,7 +489,7 @@ button {
 
     &__label {
       font-family: $futura-book;
-      font-size: 15px;
+      font-size: $font15;
       line-height: 20px;
       color: rgba(54, 54, 54, 0.5);
     }
@@ -493,12 +498,13 @@ button {
       border: none;
       border-bottom: 1px solid #c3c3c3;
       font-family: "FuturaBookC";
-      font-size: 18px;
+      font-size: $font18;
       line-height: 24px;
+      color: $white;
     }
 
     &__input::placeholder {
-      color: #363636;
+      color: $light-grey;
     }
   }
 
@@ -511,10 +517,11 @@ button {
       border: none;
       border-radius: 2px;
       font-family: $futura-demi;
-      font-size: 15px;
+      font-size: $font15;
       vertical-align: center;
       text-transform: uppercase;
-      color: #FFFFFF;
+      color: $white;
+      cursor: pointer;
       background-color: $main-color;
     }
   }
@@ -532,7 +539,7 @@ button {
       font-family: $futura-book;
       font-size: 16px;
       line-height: 22px;
-      color: #181818;
+      color: $dark-grey;
     }
 
     &__checkbox {
@@ -580,7 +587,7 @@ button {
   align-items: center;
   flex-direction: column;
   width: 84.1%;
-  background-color: #ffffff;
+  background-color: $white;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
 
   .text-container-top {
@@ -596,7 +603,7 @@ button {
       font-family: $yeseva-one;
       font-style: normal;
       font-weight: normal;
-      font-size: 18px;
+      font-size: $font18;
       line-height: 23px;
       color: $color-dark;
     }
@@ -608,17 +615,17 @@ button {
     font-family: $yeseva-one;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: $font18;
     line-height: 25px;
 
-    color: #363636;
+    color: $light-grey;
   }
 
   &__paragraph {
     font-family: $futura-book;
-    font-size: 15px;
+    font-size: $font15;
     line-height: 27px;
-    color: #959595;
+    color: $silver;
     text-transform: lowercase;
     padding-left: 20px;
     padding-right: 20px;
@@ -626,10 +633,10 @@ button {
 
   &__item {
     font-family: $futura-book;
-    font-size: 15px;
+    font-size: $font15;
     line-height: 25px;
 
-    color: #959595;
+    color: $silver;
   }
 
   &__button {
@@ -637,23 +644,22 @@ button {
     margin-top: 23px;
     width: 228px;
     height: 54px;
-    background: #E3B873;
+    background: $light-orange;
     box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
 
     font-family: $yeseva-one;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: $font18;
     line-height: 25px;
     text-transform: uppercase;
-
-    color: #FFFFFF;
+    color: $white;
   }
 }
 
 .flow {
   height: 850px;
-  width: 100vw;
+  width: 100%;
 
   .wrapper {
     margin-top: 100px;
@@ -692,10 +698,10 @@ button {
           font-family: $yeseva-one;
           font-style: normal;
           font-weight: normal;
-          font-size: 18px;
+          font-size: $font18;
           line-height: 18px;
           text-align: center;
-          color: #FFFFFF;
+          color: $white;
         }
       }
 
@@ -703,9 +709,9 @@ button {
         width: 85%;
         margin-left: 18px;
         font-family: "FuturaMediumC";
-        font-size: 18px;
+        font-size: $font18;
         line-height: 18px;
-        color: #363636;
+        color: $light-grey;
       }
     }
 
@@ -762,7 +768,7 @@ button {
       }
 
       &__input::placeholder {
-        color: #ffffff;
+        color: $white;
       }
     }
 
@@ -784,7 +790,7 @@ button {
 
       &__label {
         margin-top: 16px;
-        color: #ffffff;
+        color: $white;
       }
     }
 
@@ -812,7 +818,7 @@ button {
       width: 55%;
       margin-left: 24px;
       font-family: $futura-demi;
-      font-size: 20px;
+      font-size: $font20;
       line-height: 25px;
       color: $main-color;
       text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
@@ -821,7 +827,7 @@ button {
 }
 
 .styles {
-  width: 100vw;
+  width: 100%;
   height: 1018px;
   display: flex;
 
@@ -879,10 +885,10 @@ button {
 
     &__link {
       text-decoration: none;
-      font-family: "Proxima Nova";
-      font-size: 20px;
+      font-family: "Proxima Nova", serif;
+      font-size: $font20;
       line-height: 34px;
-      color: #FFFFFF;
+      color: $white;
       font-weight: 200;
 
       &_selected {
@@ -964,10 +970,10 @@ button {
     &__top-heading {
       margin-bottom: 18px;
       font-family: $futura-demi;
-      font-size: 15px;
+      font-size: $font15;
       line-height: 21px;
       text-transform: uppercase;
-      color: #FFFFFF;
+      color: $white;
     }
 
     &-heading {
@@ -1002,10 +1008,10 @@ button {
         font-family: $yeseva-one;
         font-style: normal;
         font-weight: normal;
-        font-size: 18px;
+        font-size: $font18;
         line-height: 25px;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: $white;
       }
 
       &__heading {
@@ -1014,18 +1020,18 @@ button {
         font-family: $yeseva-one;
         font-style: normal;
         font-weight: normal;
-        font-size: 15px;
+        font-size: $font15;
         line-height: 23px;
         text-transform: uppercase;
-        color: #E3B873;
+        color: $light-orange;
       }
 
       &__paragraph {
         margin-bottom: 14px;
         font-family: $futura-book;
-        font-size: 15px;
+        font-size: $font15;
         line-height: 25px;
-        color: #FFFFFF;
+        color: $white;
       }
     }
   }
@@ -1067,10 +1073,10 @@ button {
           font-family: $yeseva-one;
           font-style: normal;
           font-weight: normal;
-          font-size: 15px;
+          font-size: $font15;
           line-height: 21px;
           text-transform: uppercase;
-          color: #FFFFFF;
+          color: $white;
 
           height: 21px;
           border-bottom: 1px solid $main-color;
@@ -1079,9 +1085,9 @@ button {
         &__text {
           width: 128px;
           font-family: $futura-book;
-          font-size: 15px;
+          font-size: $font15;
           line-height: 18px;
-          color: #FFFFFF;
+          color: $white;
         }
 
       }
@@ -1097,13 +1103,17 @@ button {
     width: 460px;
   }
 
+  .text-section__paragraph:nth-child(2){
+    margin-bottom: 0px;
+  }
+
   .text-section__heading:first-child {
-    color: #ffffff;
+    color: $white;
   }
 
   .text-section__paragraph:nth-child(3) {
     line-height: 27px;
-    color: #ffffff;
+    color: $white;
   }
 
   .cards-container {
@@ -1139,16 +1149,16 @@ button {
 
         &__text {
           font-family: $futura-book;
-          font-size: 18px;
+          font-size: $font18;
           line-height: 26px;
           text-align: center;
-          color: #959595;
+          color: $silver;
         }
 
         &__button {
           width: 100%;
           border-radius: 0;
-          font-size: 13px;
+          font-size: $font13;
           box-shadow: none;
         }
       }
@@ -1174,7 +1184,7 @@ button {
             width: 134px;
             display: flex;
             align-items: center;
-            border-right: 1px solid #ffffff;
+            border-right: 1px solid $white;
 
             &__icon {
               margin-left: 13px;
@@ -1220,11 +1230,11 @@ button {
       font-family: $yeseva-one;
       font-style: normal;
       font-weight: normal;
-      font-size: 20px;
+      font-size: $font20;
       line-height: 28px;
       text-align: center;
       text-transform: uppercase;
-      color: #FFFFFF;
+      color: $white;
     }
 
     .input-inline {
@@ -1251,7 +1261,7 @@ button {
       }
 
       &__input::placeholder {
-        color: #ffffff;
+        color: $white;
       }
     }
 
@@ -1260,7 +1270,7 @@ button {
       margin-bottom: 50px;
 
       &__label {
-        color: #ffffff;
+        color: $white;
       }
     }
 
@@ -1271,7 +1281,7 @@ button {
 }
 
 .map {
-  width: 100vw;
+  width: 100%;
   height: fit-content;
   background-color: $color-dark;
 
@@ -1291,7 +1301,7 @@ button {
     font-family: $yeseva-one;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: $font20;
     line-height: 28px;
     text-align: center;
     text-transform: uppercase;
@@ -1324,7 +1334,7 @@ button {
 }
 
 .footer {
-  width: 100vw;
+  width: 100%;
   height: 134px;
   background-color: $color-dark;
 
@@ -1512,7 +1522,11 @@ button {
     background-color: $color-dark;
 
     .text-section__paragraph {
-      color: #ffffff;
+      color: $white;
+    }
+
+    .input-block__input{
+      color: $white !important;
     }
 
     .form {
@@ -1527,10 +1541,11 @@ button {
 
         &__input {
           background-color: $color-dark;
+          color: $white;
         }
 
         &__input::placeholder {
-          color: #ffffff;
+          color: $white;
         }
 
         &__label {
@@ -1547,7 +1562,7 @@ button {
         margin-bottom: 88px;
 
         &__label {
-          color: #ffffff;
+          color: $white;
         }
       }
 
@@ -1628,7 +1643,6 @@ button {
 
     &__number {
       text-decoration: none;
-      color: #ffffff;
     }
 
     &__button {
@@ -1695,7 +1709,7 @@ button {
     .text-section {
       &__heading,
       &__paragraph {
-        color: #ffffff;
+        color: $white;
       }
     }
   }
@@ -1705,7 +1719,7 @@ button {
     margin-bottom: 20px;
 
     .text-section__paragraph {
-      color: #ffffff;
+      color: $white;
     }
   }
 
@@ -1764,7 +1778,7 @@ button {
 
   .logo__name,
   .contact-us__number {
-    font-size: 12px;
+    font-size: $font12;
   }
 
   .intro {
@@ -1784,7 +1798,7 @@ button {
     }
 
     &__paragraph {
-      font-size: 18px;
+      font-size: $font18;
     }
   }
 
@@ -1819,8 +1833,16 @@ button {
 
     &__paragraph {
       margin-top: 30px;
-      font-size: 14px;
+      font-size: $font14;
       text-align: center;
     }
   }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  background-color: $color-dark;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
